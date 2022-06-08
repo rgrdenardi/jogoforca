@@ -1,0 +1,118 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --background-color: #e5e5e5;
+  --azul-marinho: #0a3871;
+}
+
+main,
+header {
+  background-color: var(--background-color);
+}
+
+main,
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.logo {
+  padding-left: 3rem;
+  padding-top: 1.5rem;
+}
+
+.botoes-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+}
+
+.inicio,
+.inicio1 {
+  border-color: var(--azul-marinho);
+  border-radius: 24px;
+  width: 31.7rem;
+  height: 10.5rem;
+  font-size: 1.2rem;
+  color: var(--background-color);
+  background-color: var(--azul-marinho);
+}
+
+.inicio1 {
+  color: var(--azul-marinho);
+  background-color: var(--background-color);
+}
+
+/* PÁGINA ADICIONAR PALAVRA */
+
+.salvar,
+.cancelar {
+  border-color: var(--azul-marinho);
+  border-radius: 24px;
+  width: 33.3vw;
+  height: 6.8vh;
+  font-size: 1.2rem;
+  color: var(--background-color);
+  background-color: var(--azul-marinho);
+}
+
+.cancelar {
+  color: var(--azul-marinho);
+  background-color: var(--background-color);
+}
+
+#palavra {
+  width: 66.8vw;
+  height: 30vh;
+  color: var(--azul-marinho);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  background: var(--background-color);
+  border-style: none;
+}
+
+#palavra::placeholder {
+  color: var(--azul-marinho);
+}
+
+#palavra:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.botoes-adicionar {
+  width: 66.8vw;
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.area-adicionar {
+  display: flex;
+  justify-content: center;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column;
+}
+
+.adicionar {
+  margin: auto;
+}
+
+#forca {
+  margin: auto;
+  width: 70vw;
+  height: 80vh;
+}

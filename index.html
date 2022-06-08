@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Jogo da forca dos nomes impossiveis</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/Vector.svg" alt="logo alura" />
+      </div>
+    </header>
+    <main>
+      <div class="area-botoes">
+        <div class="botoes-inicio">
+          <button class="inicio">Começar a jogar</button>
+          <button class="inicio1">Adicionar nova palavra</button>
+        </div>
+      </div>
+      <div class="area-adicionar" style="display:none">
+        <div class="campos">
+        <div class="adicionar-palavra">
+          <textarea id="palavra" name="palavra" placeholder="Digite uma palavra ou frase:" required pattern="[a-z]+"></textarea>
+          <p>&#128712 Máx de 8 letras</p>
+        </div>
+        <div class="botoes-adicionar">
+          <button class="salvar">Salvar e começar</button>
+          <button class="cancelar">Cancelar</button>
+        </div>
+        </div>
+      </div>
+      <canvas id="forca" height="860px" width="1200px"></canvas>
+    </main>
+    
+  </body>
+  <script src="script.js"></script>
+</html>
